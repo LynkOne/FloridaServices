@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_campus_mobile"
+    android:orientation="vertical"
+    tools:context=".registro.registro">
+
+    <LinearLayout
+        android:layout_width="295dp"
+        android:layout_height="630dp"
+        android:background="@drawable/layout_bg_rounded"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/logo"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:id="@+id/tv_registro_dni"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:text="@string/dni"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/et_registro_dni"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/tv_registro_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:text="@string/nombre"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/et_registro_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:inputType="textPersonName" />
+        <TextView
+            android:id="@+id/tv_registro_apellidos"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:text="@string/apellidos"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/et_registro_apellidos"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/tv_registro_telefono"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:text="@string/tel_fono"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/et_registro_telefono"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/tv_registro_email"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/email"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/et_registro_email"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/tv_registro_contrasenya"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/contrasenya"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/et_registro_contrasenya"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/tv_registro_tipoUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:text="@string/tipo_de_usuario"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/black"
+            android:visibility="invisible" />
+
+        <RadioGroup
+            android:id="@+id/rg_registro_tipoUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <RadioButton
+                android:id="@+id/rb_registro_Estudiante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/estudiante" />
+
+            <RadioButton
+                android:id="@+id/rb_registro_Profesor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/profesor" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_registro_codProfesor"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/c_digo_de_profesor"
+            android:textColor="@android:color/black"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/et_registro_codProfesor"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/bt_registro_registrarse"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_rounded_pd"
+            android:text="@string/registrarse"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</LinearLayout>

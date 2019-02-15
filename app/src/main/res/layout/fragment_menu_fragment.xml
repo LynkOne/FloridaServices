@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/gradient"
+    tools:context=".menu.menu_fragment"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ImageButton
+        android:id="@+id/home_button"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/icon_home_hover"
+        android:background="@color/transparente"
+        />
+
+    <ImageButton
+        android:id="@+id/parking_button"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:src="@drawable/icon_parking"
+        android:background="@color/transparente"/>
+
+    <ImageButton
+        android:id="@+id/library_button"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:src="@drawable/icon_books"
+        android:background="@color/transparente"/>
+
+    <ImageButton
+        android:id="@+id/fishbowl_button"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:src="@drawable/icon_fishbowl"
+        android:background="@color/transparente"/>
+    <ImageButton
+        android:id="@+id/teacher_button"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:src="@drawable/icon_teacher"
+        android:background="@color/transparente"/>
+
+    <ImageButton
+        android:id="@+id/basketball_buttton"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:src="@drawable/icon_basketball"
+        android:background="@color/transparente"/>
+</LinearLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_campus_mobile"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="295dp"
+        android:layout_height="451dp"
+        android:background="@drawable/layout_bg_rounded"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/logo"
+            android:contentDescription="@string/todo" />
+
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/correo"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/et_login_email"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/contrasena"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/et_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+
+
+        <CheckBox
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/cb_recordar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/recordar_usuario"
+            android:layout_weight="0.5"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/bt_entrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@drawable/button_rounded_p"
+                android:text="@string/entrar"
+                android:textColor="#FFFFFF"
+                />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/bt_registrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@drawable/button_rounded_pd"
+                android:text="@string/registrar"
+                android:textColor="#FFFFFF"
+                />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Florida Services</string>
+    <string name="todo">TODO</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="correo">Correo: </string>
+    <string name="contrasena">Contraseña: </string>
+    <string name="recordar_usuario">Recordar usuario</string>
+    <string name="entrar">Entrar</string>
+    <string name="registrar">Registrar</string>
+    <string name="estudiante">Estudiante</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="c_digo_de_profesor">Código de profesor:</string>
+    <string name="profesor">Profesor</string>
+    <string name="tipo_de_usuario">Tipo de usuario: </string>
+    <string name="email">Email: </string>
+    <string name="tel_fono">Teléfono: </string>
+    <string name="nombre">Nombre: </string>
+    <string name="apellidos">Apellidos: </string>
+    <string name="OBJETO_PERSONA">user</string>
+    <string name="dni">DNI: </string>
+    <string name="contrasenya">Contraseña:</string>
+
+
+</resources>

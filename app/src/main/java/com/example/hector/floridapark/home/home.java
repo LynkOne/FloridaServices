@@ -34,8 +34,12 @@ public class home extends AppCompatActivity implements menu_fragment.OnMenuInter
 
         Bundle b = getIntent().getExtras();
         user=b.getParcelable(getResources().getString(R.string.OBJETO_PERSONA));
+        getSupportActionBar().setHomeButtonEnabled(true);
+
 
     }
+
+
 
     @Override
     public void onMenuInteraction(int id) {

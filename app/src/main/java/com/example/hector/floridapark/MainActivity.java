@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         registrarse.setOnClickListener(this);
 
         queue= Volley.newRequestQueue(this);
+        login_password.requestFocus();
     }
 
     @Override
@@ -67,6 +68,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Intent i = new Intent(getApplicationContext(), registro.class);
             startActivityForResult(i, ACTIVITY_REGISTRE);
         }
+
+
     }
 
     private void LoginUserApi(String correo, String password){

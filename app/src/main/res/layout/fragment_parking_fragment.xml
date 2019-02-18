@@ -9,1604 +9,2546 @@
 
     <!-- TODO: Update blank fragment layout -->
 
-    <android.support.v7.widget.GridLayout
+    <LinearLayout
+        android:id="@+id/linear_plazas_arriba"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <LinearLayout
-            android:layout_marginTop="50dp"
-            android:layout_marginLeft="50dp"
-            android:layout_marginRight="50dp"
+            android:id="@+id/linear_plazasg"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/plazaA1"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/plaza"
-                    android:src="@drawable/car" />
-
-                <ImageView
-                    android:id="@+id/plazaA2"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/plaza"
-                    android:src="@drawable/car" />
-
-                <ImageView
-                    android:id="@+id/plazaA3"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/plaza"
-                    android:src="@drawable/car" />
-
-                <ImageView
-                    android:id="@+id/plazaA4"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/plaza"
-                    android:src="@drawable/car" />
-
-                <ImageView
-                    android:id="@+id/plazaA5"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/plaza"
-                    android:src="@drawable/car" />
-
-                <ImageView
-                    android:id="@+id/plazaA6"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/plaza"
-                    android:src="@drawable/car" />
-
-                <ImageView
-                    android:id="@+id/plazaA7"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/plaza"
-                    android:src="@drawable/car" />
-
-                <ImageView
-                    android:id="@+id/plazaA8"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/plaza"
-                    android:src="@drawable/car" />
-
-                <ImageView
-                    android:id="@+id/plazaA9"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/plaza"
-                    android:src="@drawable/car" />
-
-                <ImageView
-                    android:id="@+id/plazaA10"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/plaza"
-                    android:src="@drawable/car" />
-
-                <ImageView
-                    android:id="@+id/plazaA11"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/plaza"
-                    android:src="@drawable/car" />
-
-                <ImageView
-                    android:id="@+id/plazaA12"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/plaza"
-                    android:src="@drawable/car" />
-
-                <ImageView
-                    android:id="@+id/plazaA13"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/plaza"
-                    android:src="@drawable/car" />
-
-                <ImageView
-                    android:id="@+id/plazaA14"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/plaza"
-                    android:src="@drawable/car" />
-
-                <ImageView
-                    android:id="@+id/plazaA15"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/plaza"
-                    android:src="@drawable/car" />
-
-                <ImageView
-                    android:id="@+id/plazaA16"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/plaza"
-                    android:src="@drawable/car" />
-
-                <ImageView
-                    android:id="@+id/plazaA17"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/plaza"
-                    android:src="@drawable/car" />
-
-                <ImageView
-                    android:id="@+id/plazaA18"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/plaza"
-                    android:src="@drawable/car" />
-
-                <ImageView
-                    android:id="@+id/plazaA19"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/plaza"
-                    android:src="@drawable/car" />
-
-                <ImageView
-                    android:id="@+id/plazaA20"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/plaza"
-                    android:src="@drawable/car" />
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal"
-                android:rotation="180">
-
-
-                <ImageView
-                    android:id="@+id/plazaA21"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/plaza"
-                    android:src="@drawable/car" />
-
-                <ImageView
-                    android:id="@+id/plazaA22"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/plaza"
-                    android:src="@drawable/car" />
-
-                <ImageView
-                    android:id="@+id/plazaA23"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/plaza"
-                    android:src="@drawable/car" />
-
-                <ImageView
-                    android:id="@+id/plazaA24"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/plaza"
-                    android:src="@drawable/car" />
-
-                <ImageView
-                    android:id="@+id/plazaA25"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/plaza"
-                    android:src="@drawable/car" />
-
-                <ImageView
-                    android:id="@+id/plazaA26"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/plaza"
-                    android:src="@drawable/car" />
-
-                <ImageView
-                    android:id="@+id/plazaA27"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/plaza"
-                    android:src="@drawable/car" />
-
-                <ImageView
-                    android:id="@+id/plazaA28"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/plaza"
-                    android:src="@drawable/car" />
-
-                <ImageView
-                    android:id="@+id/plazaA29"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/plaza"
-                    android:src="@drawable/car" />
-
-                <ImageView
-                    android:id="@+id/plazaA30"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/plaza"
-                    android:src="@drawable/car" />
-
-                <ImageView
-                    android:id="@+id/plazaA31"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/plaza"
-                    android:src="@drawable/car" />
-
-                <ImageView
-                    android:id="@+id/plazaA32"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/plaza"
-                    android:src="@drawable/car" />
-
-                <ImageView
-                    android:id="@+id/plazaA33"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/plaza"
-                    android:src="@drawable/car" />
-
-                <ImageView
-                    android:id="@+id/plazaA34"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/plaza"
-                    android:src="@drawable/car" />
-
-                <ImageView
-                    android:id="@+id/plazaA35"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/plaza"
-                    android:src="@drawable/car" />
-
-                <ImageView
-                    android:id="@+id/plazaA36"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/plaza"
-                    android:src="@drawable/car" />
-
-                <ImageView
-                    android:id="@+id/plazaA37"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/plaza"
-                    android:src="@drawable/car" />
-
-                <ImageView
-                    android:id="@+id/plazaA38"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/plaza"
-                    android:src="@drawable/car" />
-
-                <ImageView
-                    android:id="@+id/plazaA39"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/plaza"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/esquinaA1"
-                    android:rotation="180"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/esquina" />
-            </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:layout_weight="1">
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:rotation="180"
+            android:orientation="horizontal">
             <ImageView
-                android:id="@+id/flecha1"
-                android:rotation="180"
+                android:id="@+id/relleno2"
                 android:layout_width="0dp"
+                android:layout_weight="2"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@drawable/flecha" />
-            <ImageView
-                android:id="@+id/carretera1"
-                android:rotation="180"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.6"
-                android:background="@drawable/carreteralim" />
-            <ImageView
-                android:id="@+id/ceda1"
-                android:rotation="180"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@drawable/ceda" />
+                android:background="@drawable/carretera"/>
 
+            <ImageView
+                android:id="@+id/plazaG1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/plaza"
+                android:src="@drawable/car"/>
+            <ImageView
+                android:id="@+id/plazaG2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/plaza"
+                android:src="@drawable/car"/>
+            <ImageView
+                android:id="@+id/plazaG3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/plaza"
+                android:src="@drawable/car"/>
+            <ImageView
+                android:id="@+id/plazaG4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/plaza"
+                android:src="@drawable/car"/>
+            <ImageView
+                android:id="@+id/plazaG5"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/plaza"
+                android:src="@drawable/car"/>
+            <ImageView
+                android:id="@+id/plazaG6"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/plaza"
+                android:src="@drawable/car"/>
+            <ImageView
+                android:id="@+id/plazaG7"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/plaza"
+                android:src="@drawable/car"/>
+            <ImageView
+                android:id="@+id/plazaG8"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/plaza"
+                android:src="@drawable/car"/>
+            <ImageView
+                android:id="@+id/plazaG9"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/plaza"
+                android:src="@drawable/car"/>
+            <ImageView
+                android:id="@+id/plazaG10"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/plaza"
+                android:src="@drawable/car"/>
+            <ImageView
+                android:id="@+id/plazaG11"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/plaza"
+                android:src="@drawable/car"/>
+            <ImageView
+                android:id="@+id/plazaG12"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/plaza"
+                android:src="@drawable/car"/>
+            <ImageView
+                android:id="@+id/plazaG13"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/plaza"
+                android:src="@drawable/car"/>
+            <ImageView
+                android:id="@+id/plazaG14"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/plaza"
+                android:src="@drawable/car"/>
+            <ImageView
+                android:id="@+id/plazaG15"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/plaza"
+                android:src="@drawable/car"/>
+            <ImageView
+                android:id="@+id/plazaG16"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/plaza"
+                android:src="@drawable/car"/>
+            <ImageView
+                android:id="@+id/plazaG17"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/plaza"
+                android:src="@drawable/car"/>
+            <ImageView
+                android:id="@+id/plazaG18"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/plaza"
+                android:src="@drawable/car"/>
+            <ImageView
+                android:id="@+id/plazaG19"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/plaza"
+                android:src="@drawable/car"/>
+            <ImageView
+                android:id="@+id/plazaG20"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/plaza"
+                android:src="@drawable/car"/>
+            <ImageView
+                android:id="@+id/plazaG21"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/plaza"
+                android:src="@drawable/car"/>
+            <ImageView
+                android:id="@+id/plazaG22"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/plaza"
+                android:src="@drawable/car"/>
+            <ImageView
+                android:id="@+id/plazaG23"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/plaza"
+                android:src="@drawable/car"/>
+            <ImageView
+                android:id="@+id/plazaG24"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/plaza"
+                android:src="@drawable/car"/>
+            <ImageView
+                android:id="@+id/plazaG25"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/plaza"
+                android:src="@drawable/car"
+                />
+            <ImageView
+                android:id="@+id/relleno3"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:background="@drawable/carretera"/>
         </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_weight="1">
-
-                <ImageView
-                    android:id="@+id/plazaB1"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaB2"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaB3"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaB4"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaB5"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaB6"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaB7"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaB8"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaB9"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaB10"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaB11"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaB12"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaB13"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaB14"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaB15"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaB16"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaB17"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaB18"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaB19"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaB20"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-
-
-            </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear_plazas_main"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="17"
+            android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:id="@+id/linear_plazas_izda"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal"
-                android:rotation="180">
+                android:orientation="vertical">
                 <ImageView
-                    android:id="@+id/plazaB21"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaB22"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaB23"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaB24"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaB25"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaB26"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaB27"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaB28"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaB29"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaB30"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaB31"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaB32"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaB33"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaB34"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaB35"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaB36"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaB37"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaB38"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaB39"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/esquinaB1"
-                    android:rotation="180"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/esquina"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:rotation="180"
-                android:orientation="horizontal"
-                android:layout_weight="1">
-                <ImageView
-                    android:id="@+id/flecha2"
-                    android:rotation="180"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/flecha" />
-                <ImageView
-                    android:id="@+id/carretera2"
-                    android:rotation="180"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.6"
-                    android:background="@drawable/carreteralim" />
-                <ImageView
-                    android:id="@+id/ceda2"
-                    android:rotation="180"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/ceda" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_weight="1">
-
-                <ImageView
-                    android:id="@+id/plazaC1"
-                    android:tag="plazaC1"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaC2"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaC3"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaC4"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaC5"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaC6"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaC7"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaC8"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaC9"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaC10"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaC11"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaC12"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaC13"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaC14"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaC15"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaC16"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaC17"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaC18"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaC19"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaC20"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal"
-                android:rotation="180">
-                <ImageView
-                    android:id="@+id/plazaC21"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaC22"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaC23"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaC24"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaC25"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaC26"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaC27"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaC28"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaC29"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaC30"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaC31"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaC32"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaC33"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaC34"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaC35"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaC36"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaC37"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaC38"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaC39"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/esquinaC1"
-                    android:rotation="180"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/esquina"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_weight="1">
-                <ImageView
-                    android:id="@+id/flecha3"
-                    android:rotation="180"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/flecha" />
-                <ImageView
-                    android:id="@+id/carretera3"
-                    android:rotation="180"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.6"
-                    android:background="@drawable/carreteralim" />
-                <ImageView
-                    android:id="@+id/ceda5"
-                    android:rotation="180"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/ceda" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_weight="1">
-
-                <ImageView
-                    android:id="@+id/plazaD1"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaD2"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaD3"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaD4"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaD5"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaD6"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaD7"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaD8"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaD9"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaD10"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaD11"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaD12"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaD13"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaD14"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaD15"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaD16"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaD17"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaD18"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaD19"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaD20"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal"
-                android:rotation="180">
-                <ImageView
-                    android:id="@+id/plazaD21"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaD22"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaD23"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaD24"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaD25"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaD26"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaD27"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaD28"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaD29"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaD30"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaD31"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaD32"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaD33"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaD34"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaD35"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaD36"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaD37"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaD38"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaD39"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/esquinaD1"
-                    android:rotation="180"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/esquina"/>
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:rotation="180"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_weight="1">
-                <ImageView
-                    android:id="@+id/flecha4"
-                    android:rotation="180"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/flecha" />
-                <ImageView
-                    android:id="@+id/carretera4"
-                    android:rotation="180"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.6"
-                    android:background="@drawable/carreteralim" />
-                <ImageView
-                    android:id="@+id/ceda4"
-                    android:rotation="180"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/ceda" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_weight="1">
-                <ImageView
-                    android:id="@+id/carretera5"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2.6"
+                    android:id="@+id/plazaH1"
                     android:rotation="90"
-                    android:src="@drawable/carreteraesquina" />
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaH2"
 
-                <ImageView
-                    android:id="@+id/plazaE1"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
+                    android:rotation="90"
+                    android:layout_width="wrap_content"
                     android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaE2"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="0dp"
                     android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
+                    android:src="@drawable/car"/>
                 <ImageView
-                    android:id="@+id/plazaE3"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaE4"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaE5"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaE6"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaE7"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaE8"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaE9"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaE10"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaE11"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaE12"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaE13"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaE14"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaE15"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
+                    android:id="@+id/plazaH3"
 
+                    android:rotation="90"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaH4"
 
+                    android:rotation="90"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaH5"
 
+                    android:rotation="90"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaH6"
+
+                    android:rotation="90"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaH7"
+
+                    android:rotation="90"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaH8"
+
+                    android:rotation="90"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaH9"
+
+                    android:rotation="90"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaH10"
+
+                    android:rotation="90"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaH11"
+
+                    android:rotation="90"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaH12"
+
+                    android:rotation="90"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaH13"
+
+                    android:rotation="90"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaH14"
+
+                    android:rotation="90"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaH15"
+
+                    android:rotation="90"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaH16"
+
+                    android:rotation="90"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaH17"
+
+                    android:rotation="90"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaH18"
+
+                    android:rotation="90"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaH19"
+
+                    android:rotation="90"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/relleno5"
+
+                    android:layout_width="wrap_content"
+                    android:layout_weight="5"
+                    android:layout_height="0dp"
+                    android:background="@drawable/carretera"/>
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:id="@+id/linear_carretera_izda"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal"
-                android:rotation="180"
-                >
-                <ImageView
-                    android:id="@+id/carretera0"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:scaleY="-1"
-                    android:layout_weight="8.5"
-                    android:background= "@drawable/esquina" />
-                <ImageView
-                    android:id="@+id/plazaE16"
-                        android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="1dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/plaza"
-                    android:rotation="20"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaE17"
-                    android:layout_marginLeft="1dp"
-                    android:rotation="20"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaE18"
-                    android:layout_marginLeft="1dp"
-                    android:rotation="20"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaE19"
-                    android:layout_marginLeft="1dp"
-                    android:rotation="20"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/plazaE20"
-                    android:layout_marginLeft="1dp"
-                    android:rotation="20"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
+                android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/plazaE21"
-                    android:layout_marginLeft="1dp"
-                    android:rotation="20"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/plaza"
-                    android:layout_weight="1"
-                    android:src="@drawable/car" />
-                <ImageView
-                    android:id="@+id/carretera6"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2.5"
-                    android:rotation="90"
-                    android:src="@drawable/carreteralim" />
+                    android:id="@+id/flecha5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/flecha"
+                    android:rotation="270" />
 
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_weight="1">
                 <ImageView
-                    android:id="@+id/carreteraesquina"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:id="@+id/carretera7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="9"
+                    android:background="@drawable/carreteralim"
+                    android:rotation="90" />
+
+                <ImageView
+                    android:id="@+id/curva3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
                     android:layout_weight="1"
                     android:background="@drawable/carreteraesquina"
                     android:rotation="270" />
 
                 <ImageView
-                    android:id="@+id/flecha"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/flecha"
-                    android:rotation="180" />
+                    android:id="@+id/relleno1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/carretera" />
+            </LinearLayout>
 
-                <ImageView
-                    android:id="@+id/carretera"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="4"
-                    android:background="@drawable/carreteralim"
-                    android:rotation="180" />
-
-                <ImageView
-                    android:id="@+id/ceda"
-
-                    android:layout_width="0dp"
+            <LinearLayout
+                android:id="@+id/linear_central"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/linear_carretera1"
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/cedaesquina"
-                    android:rotation="90"/>
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/ceda0"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/ceda" />
+                    <ImageView
+                        android:id="@+id/carretera1a"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:background="@drawable/carreteralim"
+                        android:rotation="180" />
+                    <ImageView
+                        android:id="@+id/flecha0"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/flecha" />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_plazasa1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/plazaA1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaA2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaA3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaA4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaA5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaA6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaA7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaA8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaA9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaA10"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaA11"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaA12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaA13"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaA14"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaA15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaA16"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaA17"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaA18"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaA19"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaA20"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_plazasa2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:rotation="180">
+
+
+                    <ImageView
+                        android:id="@+id/plazaA21"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaA22"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaA23"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaA24"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaA25"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaA26"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaA27"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaA28"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaA29"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaA30"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaA31"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaA32"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaA33"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaA34"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaA35"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaA36"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaA37"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaA38"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaA39"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/esquinaA1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/esquina"
+                        android:rotation="180" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_carretera2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/flecha1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/flecha"
+                        android:rotation="180" />
+
+                    <ImageView
+                        android:id="@+id/carretera1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:background="@drawable/carreteralim"
+                        android:rotation="180" />
+
+                    <ImageView
+                        android:id="@+id/ceda1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/ceda"
+                        android:rotation="180" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_plazasb1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/plazaB1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaB2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaB3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaB4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaB5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaB6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaB7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaB8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaB9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaB10"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaB11"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaB12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaB13"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaB14"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaB15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaB16"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaB17"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaB18"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaB19"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaB20"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_plazasb2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:rotation="180">
+
+                    <ImageView
+                        android:id="@+id/plazaB21"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaB22"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaB23"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaB24"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaB25"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaB26"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaB27"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaB28"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaB29"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaB30"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaB31"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaB32"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaB33"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaB34"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaB35"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaB36"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaB37"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaB38"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaB39"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/esquinaB1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/esquina"
+                        android:rotation="180" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_carretera3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:rotation="180">
+
+                    <ImageView
+                        android:id="@+id/flecha2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/flecha"
+                        android:rotation="180" />
+
+                    <ImageView
+                        android:id="@+id/carretera2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:background="@drawable/carreteralim"
+                        android:rotation="180" />
+
+                    <ImageView
+                        android:id="@+id/ceda2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/ceda"
+                        android:rotation="180" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_plazasc1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/plazaC1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car"
+                        android:tag="plazaC1" />
+
+                    <ImageView
+                        android:id="@+id/plazaC2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaC3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaC4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaC5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaC6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaC7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaC8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaC9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaC10"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaC11"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaC12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaC13"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaC14"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaC15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaC16"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaC17"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaC18"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaC19"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaC20"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_plazasc2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:rotation="180">
+
+                    <ImageView
+                        android:id="@+id/plazaC21"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaC22"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaC23"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaC24"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaC25"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaC26"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaC27"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaC28"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaC29"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaC30"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaC31"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaC32"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaC33"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaC34"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaC35"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaC36"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaC37"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaC38"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaC39"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/esquinaC1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/esquina"
+                        android:rotation="180" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_carretera4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/flecha3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/flecha"
+                        android:rotation="180" />
+
+                    <ImageView
+                        android:id="@+id/carretera3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:background="@drawable/carreteralim"
+                        android:rotation="180" />
+
+                    <ImageView
+                        android:id="@+id/ceda5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/ceda"
+                        android:rotation="180" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_plazasd1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/plazaD1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaD2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaD3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaD4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaD5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaD6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaD7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaD8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaD9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaD10"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaD11"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaD12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaD13"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaD14"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaD15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaD16"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaD17"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaD18"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaD19"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaD20"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_plazasd2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:rotation="180">
+
+                    <ImageView
+                        android:id="@+id/plazaD21"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaD22"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaD23"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaD24"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaD25"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaD26"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaD27"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaD28"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaD29"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaD30"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaD31"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaD32"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaD33"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaD34"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaD35"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaD36"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaD37"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaD38"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaD39"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/esquinaD1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/esquina"
+                        android:rotation="180" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_carretera6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:rotation="180">
+
+                    <ImageView
+                        android:id="@+id/flecha4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/flecha"
+                        android:rotation="180" />
+
+                    <ImageView
+                        android:id="@+id/carretera4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:background="@drawable/carreteralim"
+                        android:rotation="180" />
+
+                    <ImageView
+                        android:id="@+id/ceda4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/ceda"
+                        android:rotation="180" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_plazase1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/carretera5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.6"
+                        android:rotation="90"
+                        android:src="@drawable/carreteraesquina" />
+
+                    <ImageView
+                        android:id="@+id/plazaE1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaE2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaE3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaE4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaE5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaE6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaE7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaE8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaE9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaE10"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaE11"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaE12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaE13"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaE14"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaE15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:src="@drawable/car" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_plazase2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:rotation="180">
+
+                    <ImageView
+                        android:id="@+id/carretera0"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8.5"
+                        android:background="@drawable/esquina"
+                        android:scaleY="-1" />
+
+                    <ImageView
+                        android:id="@+id/plazaE16"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:rotation="20"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaE17"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:rotation="20"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaE18"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:rotation="20"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaE19"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:rotation="20"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaE20"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:rotation="20"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/plazaE21"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/plaza"
+                        android:rotation="20"
+                        android:src="@drawable/car" />
+
+                    <ImageView
+                        android:id="@+id/carretera6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.5"
+                        android:rotation="90"
+                        android:src="@drawable/carreteralim" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_carretera7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/carreteraesquina"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/carreteraesquina"
+                        android:rotation="270" />
+
+                    <ImageView
+                        android:id="@+id/flecha"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/flecha"
+                        android:rotation="180" />
+
+                    <ImageView
+                        android:id="@+id/carretera"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:background="@drawable/carreteralim"
+                        android:rotation="180" />
+
+                    <ImageView
+                        android:id="@+id/ceda"
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/cedaesquina"
+                        android:rotation="90" />
+                </LinearLayout>
             </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_carretera_derecha"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_plazasf"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/plazaF1"
+                    android:rotation="270"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaF2"
+
+                    android:rotation="270"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaF3"
+
+                    android:rotation="270"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaF4"
+
+                    android:rotation="270"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaF5"
+
+                    android:rotation="270"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaF6"
+
+                    android:rotation="270"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaF7"
+
+                    android:rotation="270"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaF8"
+
+                    android:rotation="270"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaF9"
+
+                    android:rotation="270"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaF10"
+
+                    android:rotation="270"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaF11"
+
+                    android:rotation="270"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaF12"
+
+                    android:rotation="270"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaF13"
+
+                    android:rotation="270"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaF14"
+
+                    android:rotation="270"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaF15"
+
+                    android:rotation="270"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaF16"
+
+                    android:rotation="270"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaF17"
+
+                    android:rotation="270"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaF18"
+
+                    android:rotation="270"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaF19"
+
+                    android:rotation="270"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaF20"
+
+                    android:rotation="270"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaF21"
+
+                    android:rotation="270"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaF22"
+
+                    android:rotation="270"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaF23"
+
+                    android:rotation="270"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaF24"
+
+                    android:rotation="270"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaF25"
+
+                    android:rotation="270"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaF26"
+
+                    android:rotation="270"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"
+                    />
+                <ImageView
+                    android:id="@+id/plazaF27"
+
+                    android:rotation="270"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaF28"
+
+                    android:rotation="270"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaF29"
+
+                    android:rotation="270"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaF30"
+
+                    android:rotation="270"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaF31"
+
+                    android:rotation="270"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+                <ImageView
+                    android:id="@+id/plazaF32"
+
+                    android:rotation="270"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:background="@drawable/plaza"
+                    android:src="@drawable/car"/>
+
+
+
+            </LinearLayout>
+
         </LinearLayout>
 
-    </android.support.v7.widget.GridLayout>
+    </LinearLayout>
+
 </FrameLayout>

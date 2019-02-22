@@ -44,7 +44,7 @@ public class menu_fragment extends Fragment implements View.OnClickListener {
 
     }
 
-    
+
     // TODO: Rename and change types and number of parameters
     public static menu_fragment newInstance(Personas p) {
         menu_fragment fragment = new menu_fragment();

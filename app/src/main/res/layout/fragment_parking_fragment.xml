@@ -1713,7 +1713,7 @@
                     android:layout_weight="1"
                     android:orientation="horizontal"
                     android:rotation="180"
-                    android:tag="plazaC21">
+                    android:tag="linear_plazasc2">
 
                     <ImageView
                         android:id="@+id/plazaC21"
@@ -3061,7 +3061,7 @@
                     android:layout_height="0dp"
                     android:background="@drawable/plaza"
                     android:src="@drawable/car"
-                    android:tag="plazaCF23"/>
+                    android:tag="plazaF23"/>
                 <ImageView
                     android:id="@+id/plazaF24"
 

@@ -21,6 +21,12 @@
     <string name="OBJETO_PERSONA">user</string>
     <string name="dni">DNI: </string>
     <string name="contrasenya">Contraseña:</string>
-
+    <string name="parking">Parking</string>
+    <string name="bilbioteca">Biblioteca</string>
+    <string name="peceras">Peceras</string>
+    <string name="florida_oberta">Florida Oberta</string>
+    <string name="reserva_aulas">Reserva de Aulas</string>
+    <string name="empty_user">El usuario está vacio</string>
+    <string name="empty_password">La contraseña está vacia</string>
 
 </resources>

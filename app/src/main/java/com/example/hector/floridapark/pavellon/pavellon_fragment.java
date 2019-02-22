@@ -1,4 +1,4 @@
-package com.example.hector.floridapark.parking;
+package com.example.hector.floridapark.pavellon;
 
 import android.content.Context;
 import android.net.Uri;
@@ -7,28 +7,22 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 
 import com.example.hector.floridapark.R;
 
-import java.util.ArrayList;
-
-
-public class parking_fragment extends Fragment {
+public class pavellon_fragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-    private ArrayList<ImageView> plazas;
-    private String letra_aux_plazas="A";
-    ImageView prova;
+
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
 
-   // private OnFragmentInteractionListener mListener;
+    //private OnFragmentInteractionListener mListener;
 
-    public parking_fragment() {
+    public pavellon_fragment() {
         // Required empty public constructor
     }
 
@@ -38,11 +32,11 @@ public class parking_fragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment parking_fragment.
+     * @return A new instance of fragment pavellon_fragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static parking_fragment newInstance(String param1, String param2) {
-        parking_fragment fragment = new parking_fragment();
+    public static pavellon_fragment newInstance(String param1, String param2) {
+        pavellon_fragment fragment = new pavellon_fragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -63,61 +57,17 @@ public class parking_fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v =inflater.inflate(R.layout.fragment_parking_fragment, container, false);
-        plazas=new ArrayList<ImageView>();
-        letra_aux_plazas="A";
-        for(int i=1;i<=39;i++){
-            plazas.add((ImageView) v.findViewWithTag("plaza"+letra_aux_plazas+i));
-
-            if (i == 39) {
-                switch (letra_aux_plazas){
-                    case "A":
-                        letra_aux_plazas="B";
-                        i=1;
-                        break;
-                    case "B":
-                        letra_aux_plazas="C";
-                        i=1;
-                        break;
-                    case "C":
-                        letra_aux_plazas="D";
-                        i=1;
-                        break;
-                    case "D":
-                        letra_aux_plazas="E";
-                        i=1;
-                        break;
-                }
-            }
-            if(letra_aux_plazas=="E" && i==21){
-                letra_aux_plazas="F";
-                i=1;
-            }
-            if(letra_aux_plazas=="F" && i==32){
-                letra_aux_plazas="G";
-                i=1;
-            }
-            if(letra_aux_plazas=="G" && i==25){
-                letra_aux_plazas="H";
-                i=1;
-            }
-            if(letra_aux_plazas=="H" && i==19){
-                i=1;
-                break;
-            }
+        return inflater.inflate(R.layout.fragment_pavellon_fragment, container, false);
+    }
+/*
+    // TODO: Rename method, update argument and hook method into UI event
+    public void onButtonPressed(Uri uri) {
+        if (mListener != null) {
+            mListener.onFragmentInteraction(uri);
         }
-       // String rdo_consulta="C1";
-       // prova = (ImageView) v.findViewWithTag("plaza"+rdo_consulta);
-        //prova.setImageResource(0);
-
-        for (ImageView iv:plazas) {
-            iv.setImageResource(0);
-        }
-        return v;
     }
 
-
-/*    @Override
+    @Override
     public void onAttach(Context context) {
         super.onAttach(context);
         if (context instanceof OnFragmentInteractionListener) {
@@ -133,8 +83,17 @@ public class parking_fragment extends Fragment {
         super.onDetach();
         mListener = null;
     }
-
-
+*/
+    /**
+     * This interface must be implemented by activities that contain this
+     * fragment to allow an interaction in this fragment to be communicated
+     * to the activity and potentially other fragments contained in that
+     * activity.
+     * <p>
+     * See the Android Training lesson <a href=
+     * "http://developer.android.com/training/basics/fragments/communicating.html"
+     * >Communicating with Other Fragments</a> for more information.
+     *//*
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);

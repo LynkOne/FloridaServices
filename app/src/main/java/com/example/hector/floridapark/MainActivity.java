@@ -1,6 +1,8 @@
 package com.example.hector.floridapark;
 
+import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -32,7 +34,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private EditText login_correo, login_password;
     private CheckBox recordar;
     private RequestQueue queue;
+    private SharedPreferences preferencias;
     private final int ACTIVITY_REGISTRE = 2;
+    protected final static String PREFS = "preferencias";
+    private SharedPreferences.Editor editor;
 
     private Personas user;
     @Override
@@ -42,24 +47,56 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        preferencias = getSharedPreferences(MainActivity.PREFS, Activity.MODE_PRIVATE);
+        editor = preferencias.edit();
+
         entrar=(Button)findViewById(R.id.bt_entrar);
         registrarse=(Button) findViewById(R.id.bt_registrar);
         login_correo=(EditText)findViewById(R.id.et_login_email);
         login_password=(EditText)findViewById(R.id.et_login_password);
         recordar=(CheckBox)findViewById(R.id.cb_recordar);
-
+        recordar.setOnClickListener(this);
         entrar.setOnClickListener(this);
         registrarse.setOnClickListener(this);
 
         queue= Volley.newRequestQueue(this);
-        login_password.requestFocus();
+        Log.d("hectorr",preferencias.getString("correo", "default"));
+        login_correo.setText(preferencias.getString("correo",""));
+        if(!preferencias.getString("correo","").isEmpty()){
+            login_password.requestFocus();
+            recordar.setChecked(true);
+        }
+
     }
 
     @Override
     public void onClick(View v) {
         if(v.getId()==entrar.getId()){
 
-            LoginUserApi(login_correo.getText().toString(),login_password.getText().toString());
+            if(!login_correo.getText().toString().isEmpty() && !login_password.getText().toString().isEmpty()){
+                if(recordar.isChecked()){
+
+                    editor.putString("correo", login_correo.getText().toString());
+                    editor.commit();
+                }
+                LoginUserApi(login_correo.getText().toString(),login_password.getText().toString());
+
+            }else {
+                if(login_correo.getText().toString().isEmpty()){
+                    login_correo.setError(getResources().getText(R.string.empty_user));
+                    login_correo.requestFocus();
+                }else{
+                    if(login_password.getText().toString().isEmpty()){
+                        login_password.setError(getResources().getText(R.string.empty_password));
+                        login_password.requestFocus();
+                    }
+                }
+
+
+
+            }
+
+
                 
             
             
@@ -67,6 +104,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (v.getId()==registrarse.getId()){
             Intent i = new Intent(getApplicationContext(), registro.class);
             startActivityForResult(i, ACTIVITY_REGISTRE);
+        }
+        if(v.getId()==recordar.getId()){
+            if(!recordar.isChecked()){
+
+                editor.putString("correo", "");
+                editor.commit();
+            }
         }
 
 
@@ -95,6 +139,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     }
                     else
                     {
+                        if (login.keys().next().compareTo("error")==0) {
+                            String error=new Gson().fromJson(loginArray.get(0).toString(), String.class);
+                            Toast.makeText(MainActivity.this, error, Toast.LENGTH_SHORT).show();
+
+                            Log.d("hectorr",user.toString());
+                        }
                         resultado="error";
                     }
 
@@ -107,6 +157,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         Intent i = new Intent(getApplicationContext(), home.class);
                         Bundle buser=new Bundle();
                         buser.putParcelable(getResources().getString(R.string.OBJETO_PERSONA),user);
+                        Log.d("hectorr",user.toString());
                         i.putExtras(buser);
                         startActivity(i);
                     }else{
@@ -125,7 +176,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Log.d("hectorr",error.getMessage());
+                Log.d("hectorr","hehe");
             }
         });
 

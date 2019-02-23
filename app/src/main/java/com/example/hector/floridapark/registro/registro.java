@@ -51,15 +51,15 @@ public class registro extends AppCompatActivity implements View.OnClickListener{
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro);
-
+        //Comprobamos y pedimos permisos de camara para poder escanear
         if (ContextCompat.checkSelfPermission(getApplicationContext(), android.Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
             if (Build.VERSION.SDK_INT > 22) {
                 if (shouldShowRequestPermissionRationale(android.Manifest.permission.CAMERA))
-                    Toast.makeText(getApplicationContext(), "Esta aplicación necesita acceder a la cámara para funcionar", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), getResources().getText(R.string.permisos_camara), Toast.LENGTH_SHORT).show();
                 requestPermissions(new String[]{android.Manifest.permission.CAMERA}, MY_PERMISSIONS_REQUEST_CAMERA);
             }
         }
-
+        //Asignamos todos los view de los EditText, RadioButton, etc.
         queue= Volley.newRequestQueue(this);
         rgTipoUsuario=(RadioGroup)findViewById(R.id.rg_registro_tipoUsuario);
         rbEstudiante=(RadioButton)findViewById(R.id.rb_registro_Estudiante);
@@ -128,7 +128,7 @@ public class registro extends AppCompatActivity implements View.OnClickListener{
 
             }
 
-            @Override
+            @Override//Comprobamos si es un correo de profesor para habilitar el registro de profesores y mostrar los campos pertinentes
             public void afterTextChanged(Editable s) {
                 if (etCorreo.getText().toString().contains("@florida-uni.es")){
                     rgTipoUsuario.setVisibility(View.VISIBLE);
@@ -144,12 +144,12 @@ public class registro extends AppCompatActivity implements View.OnClickListener{
         });
 
         AlertDialog.Builder alertBuilder = new AlertDialog.Builder(this);
-        alertBuilder.setTitle("Escanea tu carnet de Florida");
+        alertBuilder.setTitle(getResources().getText(R.string.titulo_dialog_registro));
 
-        alertBuilder.setMessage("Para facilitar el registro, sólo debes leer el código QR y el código de Barras de tu carnet:");
+        alertBuilder.setMessage(getResources().getText(R.string.contenido_dialog_registro));
 
         // Botón guardar
-        alertBuilder.setPositiveButton("Escanear", new DialogInterface.OnClickListener() {
+        alertBuilder.setPositiveButton(getResources().getText(R.string.boton_escanear_dialog_registro), new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 dialog.dismiss();
@@ -158,7 +158,7 @@ public class registro extends AppCompatActivity implements View.OnClickListener{
             }
         });
         // Botón cancelar
-        alertBuilder.setNegativeButton("Introducir manualmente", new DialogInterface.OnClickListener() {
+        alertBuilder.setNegativeButton(getResources().getText(R.string.boton_manual_dialog_registro), new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 dialog.dismiss();
@@ -173,42 +173,42 @@ public class registro extends AppCompatActivity implements View.OnClickListener{
         if(v.getId()==btRegistrarse.getId()){
 
             if(etDni.getText().toString().isEmpty()){
-                etDni.setError("Se necesita un DNI para registrarse");
+                etDni.setError(getResources().getText(R.string.error_dni));
                 etDni.requestFocus();
             }
             if(etNombe.getText().toString().isEmpty()){
-                etNombe.setError("No puedes dejar el nombre en blanco");
+                etNombe.setError(getResources().getText(R.string.error_nombre));
                 etNombe.requestFocus();
             }
             if(etApellidos.getText().toString().isEmpty()){
-                etApellidos.setError("No puedes dejar los apellidos en blanco");
+                etApellidos.setError(getResources().getText(R.string.error_apellidos));
                 etApellidos.requestFocus();
             }
             if(etTelefono.getText().toString().isEmpty()){
-                etTelefono.setError("Se necesita un teléfono de contacto para registrarse");
+                etTelefono.setError(getResources().getText(R.string.empty_telefono));
                 etTelefono.requestFocus();
             }
             if(etCorreo.getText().toString().isEmpty()){
-                etCorreo.setError("El campo correo está vacio");
+                etCorreo.setError(getResources().getText(R.string.empty_email));
                 etCorreo.requestFocus();
             }else{
                 if(!Patterns.EMAIL_ADDRESS.matcher(etCorreo.getText().toString()).matches()){
 
-                    etCorreo.setError("El correo introducido no es válido");
+                    etCorreo.setError(getResources().getText(R.string.error_email));
                     etCorreo.requestFocus();
                 }
             }
 
             if(etPassword.getText().toString().isEmpty()){
-                etPassword.setError("Se necesita una contraseña");
+                etPassword.setError(getResources().getText(R.string.empty_password));
                 etPassword.requestFocus();
             }
             if(etPassword.getText().toString().length()<6){
-                etPassword.setError("Contraseña demasiado corta, almenos 6 caracteres");
+                etPassword.setError(getResources().getText(R.string.error_password));
                 etPassword.requestFocus();
             }
 
-            if (!etDni.getText().toString().isEmpty() && validaDNI(etDni.getText().toString()) && !etNombe.getText().toString().isEmpty() && !etApellidos.getText().toString().isEmpty() && !etTelefono.getText().toString().isEmpty() && !etCorreo.getText().toString().isEmpty() && !etPassword.getText().toString().isEmpty() && etPassword.getText().toString().length()>=6) {
+            if (!etDni.getText().toString().isEmpty() && validaDNI(this.dni) && !etNombe.getText().toString().isEmpty() && !etApellidos.getText().toString().isEmpty() && !etTelefono.getText().toString().isEmpty() && !etCorreo.getText().toString().isEmpty() && !etPassword.getText().toString().isEmpty() && etPassword.getText().toString().length()>=6) {
 
                 if (rgTipoUsuario.getCheckedRadioButtonId()==rbEstudiante.getId()){
                     Personas persona_registro = new Personas(etDni.getText().toString(),etNombe.getText().toString(),etApellidos.getText().toString(),Integer.parseInt(etTelefono.getText().toString()),etCorreo.getText().toString(),etPassword.getText().toString(),false, 0);
@@ -218,7 +218,7 @@ public class registro extends AppCompatActivity implements View.OnClickListener{
 
                 if (rgTipoUsuario.getCheckedRadioButtonId()==rbProfesor.getId()){
                     Log.d("hectorrr", "REGISTRANDO PROFESOR");
-                    Personas persona_registro = new Personas(etDni.getText().toString(),etNombe.getText().toString(),etApellidos.getText().toString(),Integer.parseInt(etTelefono.getText().toString()),etCorreo.getText().toString(),etPassword.getText().toString(),true, Integer.parseInt(etCodProfesor.getText().toString()));
+                    Personas persona_registro = new Personas(this.dni,etNombe.getText().toString(),etApellidos.getText().toString(),Integer.parseInt(etTelefono.getText().toString()),etCorreo.getText().toString(),etPassword.getText().toString(),true, Integer.parseInt(etCodProfesor.getText().toString()));
                     RegisterUserApi(persona_registro);
                 }
                 Log.d("hectorrr", "REGISTRANDO USUARIO");
@@ -271,6 +271,8 @@ public class registro extends AppCompatActivity implements View.OnClickListener{
         }
         catch (Exception e){
             Log.e("MIO", "algo no funciona en la comprobacion del dni!!"+e.getMessage());
+            etDni.setError(getResources().getText(R.string.error_dni));
+            etDni.requestFocus();
             e.printStackTrace();
         }
 
@@ -280,11 +282,11 @@ public class registro extends AppCompatActivity implements View.OnClickListener{
     private void RegisterUserApi(Personas pr){
         String url="";
         if (pr.isTipo()){
-            url="http://floridaservices.cf/api/RestController.php?dni="+pr.getDni()+"&nombre="+pr.getNombre()+"&apellidos="+pr.getApellidos()+"&correo="+pr.getCorreo()+"&contrasenya="+pr.getPassword()+"&tipo=1&telefono="+pr.getTelefono()+"&codProf="+pr.getCod_prof();
+            url=getResources().getText(R.string.HOST)+"/api/RestController.php?dni="+pr.getDni()+"&nombre="+pr.getNombre()+"&apellidos="+pr.getApellidos()+"&correo="+pr.getCorreo()+"&contrasenya="+pr.getPassword()+"&tipo=1&telefono="+pr.getTelefono()+"&codProf="+pr.getCod_prof();
 
         }
         else{
-            url="http://floridaservices.cf/api/RestController.php?dni="+pr.getDni()+"&nombre="+pr.getNombre()+"&apellidos="+pr.getApellidos()+"&correo="+pr.getCorreo()+"&contrasenya="+pr.getPassword()+"&tipo=0&telefono="+pr.getTelefono()+"&codProf="+pr.getCod_prof();
+            url=getResources().getText(R.string.HOST)+"/api/RestController.php?dni="+pr.getDni()+"&nombre="+pr.getNombre()+"&apellidos="+pr.getApellidos()+"&correo="+pr.getCorreo()+"&contrasenya="+pr.getPassword()+"&tipo=0&telefono="+pr.getTelefono()+"&codProf="+pr.getCod_prof();
 
         }
        //String aux=url.replace(" ","%20");
@@ -303,18 +305,13 @@ public class registro extends AppCompatActivity implements View.OnClickListener{
 
                         setResult(RESULT_OK);
                         finish();
-                        //Toast.makeText(registro.this, "Usuario registrado correctamente", Toast.LENGTH_SHORT).show();
-                        //Intent i = new Intent(getApplicationContext(), home.class);
-                        //sstartActivity(i);
+
                     }else{
 
-                        Toast.makeText(registro.this, "Error en el registro. Revise los datos introducidos", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(registro.this, getResources().getText(R.string.error_registro), Toast.LENGTH_SHORT).show();
                         Log.d("hectorr","REGISTRO INCORRECTO");
                     }
 
-                    //Toast.makeText(MainActivity.this, resultado, Toast.LENGTH_SHORT).show();
-                    // Log.d("hectorr", "Resultado del login: "+login.getBoolean("login"));
-                    //result[0] =login.getBoolean("login");
                 }catch (JSONException e){
                     e.printStackTrace();
                     Log.d("hectorr", "Error del parse json "+e.getMessage());

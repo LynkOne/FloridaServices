@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void LoginUserApi(String correo, String password){
-        String url="http://floridaservices.cf/api/users/"+correo+"/"+password+"/";
+        String url=getResources().getText(R.string.HOST)+"/api/users/"+correo+"/"+password+"/";
         Log.d("hectorr", "estoy accediendo a la api: "+url);
 
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
@@ -153,7 +153,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         
                         Log.d("hectorr","LOGIN CORRECTO");
 
-                        Toast.makeText(MainActivity.this, "Bienvenido", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, getResources().getText(R.string.bienvenido), Toast.LENGTH_SHORT).show();
                         Intent i = new Intent(getApplicationContext(), home.class);
                         Bundle buser=new Bundle();
                         buser.putParcelable(getResources().getString(R.string.OBJETO_PERSONA),user);
@@ -161,13 +161,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         i.putExtras(buser);
                         startActivity(i);
                     }else{
-                        Toast.makeText(MainActivity.this, "Usuario o contraseña incorrectos", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, getResources().getText(R.string.error_login), Toast.LENGTH_SHORT).show();
                         Log.d("hectorr","LOGIN INCORRECTO");
                     }
 
-                    //Toast.makeText(MainActivity.this, resultado, Toast.LENGTH_SHORT).show();
-                   // Log.d("hectorr", "Resultado del login: "+login.getBoolean("login"));
-                    //result[0] =login.getBoolean("login");
+
                 }catch (JSONException e){
                     e.printStackTrace();
                     Log.d("hectorr", "Error del parse json "+e.getMessage());
@@ -189,7 +187,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode==ACTIVITY_REGISTRE){
             if(resultCode==RESULT_OK){
-                Toast.makeText(this, "Usuario registrado correctamente", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, getResources().getText(R.string.registro_ok), Toast.LENGTH_SHORT).show();
             }
         }
     }

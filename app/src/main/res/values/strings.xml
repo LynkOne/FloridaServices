@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Florida Services</string>
     <string name="todo">TODO</string>
-
+    <string name="HOST">http://floridaservices.cf</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="correo">Correo: </string>
@@ -28,5 +28,21 @@
     <string name="reserva_aulas">Reserva de Aulas</string>
     <string name="empty_user">El usuario está vacio</string>
     <string name="empty_password">La contraseña está vacia</string>
+    <string name="permisos_camara">Esta aplicación necesita acceder a la cámara para funcionar</string>
+    <string name="titulo_dialog_registro">Escanea tu carnet de Florida</string>
+    <string name="contenido_dialog_registro">Para facilitar el registro, sólo debes leer el código QR y el código de Barras de tu carnet:</string>
+    <string name="boton_escanear_dialog_registro">Escanear</string>
+    <string name="boton_manual_dialog_registro">Introducir manualmente</string>
+    <string name="error_dni">Se necesita un DNI válido para registrarse</string>
+    <string name="error_nombre">No puedes dejar el nombre en blanco</string>
+    <string name="error_apellidos">No puedes dejar los apellidos en blanco</string>
+    <string name="empty_email">El correo está vacio</string>
+    <string name="empty_telefono">Se necesita un teléfono de contacto para registrarse</string>
+    <string name="error_email">El correo introducido no es válido</string>
+    <string name="error_password">Contraseña demasiado corta, almenos 6 caracteres</string>
+    <string name="error_registro">Error en el registro. Revise los datos introducidos</string>
+    <string name="error_login">Usuario o contraseña incorrectos</string>
+    <string name="registro_ok">Usuario registrado correctamente</string>
+    <string name="bienvenido">Bienvenido</string>
 
 </resources>

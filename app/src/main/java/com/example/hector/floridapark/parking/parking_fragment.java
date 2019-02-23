@@ -120,15 +120,16 @@ public class parking_fragment extends Fragment implements View.OnClickListener {
                 break;
             }
         }
-       // String rdo_consulta="C1";
-       // prova = (ImageView) v.findViewWithTag("plaza"+rdo_consulta);
-        //prova.setImageResource(0);
 
+        //Vaciamos todas las plazas y generamos el OnClickListener de cada una de ellas
         for (ImageView iv:plazas) {
             Log.d("hectorr","rellenando plaza "+iv.getTag().toString());
             iv.setImageResource(0);
             iv.setOnClickListener(this);
         }
+
+
+        //Comprobamos si hay preferencias guardadas y pintamos la plaza donde hemos aparcado en caso de haber preferencias
         if(preferencias.getString("plaza_aparcado","").compareTo("")!=0){
 
             ImageView aux=v.findViewWithTag(preferencias.getString("plaza_aparcado",""));
@@ -141,16 +142,21 @@ public class parking_fragment extends Fragment implements View.OnClickListener {
     public void onClick(View v) {
         for (ImageView iv:plazas) {
             if(v.getId()==iv.getId()){
+                //Comprobamos si habiamos guardado la plaza donde hemos aparcado
                 if(preferencias.getString("plaza_aparcado","").compareTo("")!=0){
                     Log.d("hectorr","plaza donde estabas aparcado: "+preferencias.getString("plaza_aparcado",""));
+                    //Creamos un imageView auxiliar con la plaza donde estabamos aparcados anteriormente
                     ImageView aux=viewAuxiliar.findViewWithTag(preferencias.getString("plaza_aparcado",""));
+                    //Le quitamos el coche rojo
                     aux.setImageResource(0);
                     if(v.getId()!=aux.getId()){
+                        //Si la plaza seleccionada es diferente de la anterior, actualizamos la plaza nueva con el coche rojo y la guardamos en preferencias
                         editor.putString("plaza_aparcado", iv.getTag().toString());
                         editor.commit();
                         iv.setImageResource(R.drawable.carmine);
                     }
                 }
+                //Si no teniamos una plaza guardada, simplemente la guardamos
                 else{
                     ImageView aux=v.findViewById(iv.getId());
                     editor.putString("plaza_aparcado", iv.getTag().toString());
@@ -161,6 +167,11 @@ public class parking_fragment extends Fragment implements View.OnClickListener {
             }
 
         }
+    }
+
+    public void relenarPlazas(){
+
+
     }
 
 

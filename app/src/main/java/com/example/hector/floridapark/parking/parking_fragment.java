@@ -51,6 +51,7 @@ public class parking_fragment extends Fragment implements View.OnClickListener {
     private View viewAuxiliar;
     private RequestQueue queue;
     private Timer myTimer;
+    private Thread timer;
 
     ImageView prova;
     // TODO: Rename and change types of parameters
@@ -103,6 +104,8 @@ public class parking_fragment extends Fragment implements View.OnClickListener {
         plazas=new ArrayList<ImageView>();
         alPlazas=new ArrayList<Plazas>();
         letra_aux_plazas="A";
+
+
         for(int i=1;i<=39;i++){
             Log.d("hectorr","asignando plaza por tag "+letra_aux_plazas+i);
             plazas.add((ImageView) v.findViewWithTag("plaza"+letra_aux_plazas+i));
@@ -145,20 +148,40 @@ public class parking_fragment extends Fragment implements View.OnClickListener {
             }
         }
 
-        //Vaciamos todas las plazas y generamos el OnClickListener de cada una de ellas
+        //Generamos el OnClickListener de cada una de las plazas
         for (ImageView iv:plazas) {
             Log.d("hectorr","vaciando plaza "+iv.getTag().toString()+" y creando listener");
 
             iv.setOnClickListener(this);
         }
-        //Rellenamos las plazas
-        rellenarPlazas();
-        //Comprobamos si hay preferencias guardadas y pintamos la plaza donde hemos aparcado en caso de haber preferencias
-        if(preferencias.getString("plaza_aparcado","").compareTo("")!=0){
 
-            ImageView aux=v.findViewWithTag(preferencias.getString("plaza_aparcado",""));
-            aux.setImageResource(R.drawable.carmine);
+        timer = new Thread(new Runnable() {
+            @Override
+            public void run() {
+            try {
+
+                while (true){
+                    parking_fragment fragmentParking = (parking_fragment) getFragmentManager().findFragmentById(R.id.fragment_app);
+                    if (fragmentParking != null && fragmentParking.isVisible()) {
+                        //DO STUFF
+                        Log.d("hectorr", "Rellenando plazas en el thread");
+                        rellenarPlazas();
+                        Thread.sleep(15000);// Sleep 15 seconds
+                    }
+                    else {
+                        //Whatever
+                        Log.d("hectorr","El fragment parking no es visible");
+                        Thread.sleep(15000);// Sleep 15 seconds
+                    }
+
+                }
+
+            }catch (Exception e){
+                Log.d("hectorr","Error en el thread: "+e.getMessage());
+            }
         }
+        });
+        timer.start();
 
         return v;
     }
@@ -216,7 +239,6 @@ public class parking_fragment extends Fragment implements View.OnClickListener {
                     Log.d("hectorr",plazasArray.toString());
                     for(int i=0;i<plazasArray.length();i++){
                         JSONObject plaza=plazasArray.getJSONObject(i);
-                        Log.d("hectorr",plaza.getString("plaza"));
                         auxPlaza = new Gson().fromJson(plazasArray.getJSONObject(i).toString(), Plazas.class);
                         alPlazas.add(auxPlaza);
                     }
@@ -229,6 +251,12 @@ public class parking_fragment extends Fragment implements View.OnClickListener {
                         else{
                             auximplaza.setImageResource(0);
                         }
+                    }
+                    //Comprobamos si hay preferencias guardadas y pintamos la plaza donde hemos aparcado en caso de haber preferencias
+                    if(preferencias.getString("plaza_aparcado","").compareTo("")!=0){
+
+                        ImageView aux=viewAuxiliar.findViewWithTag(preferencias.getString("plaza_aparcado",""));
+                        aux.setImageResource(R.drawable.carmine);
                     }
 
 
@@ -249,11 +277,12 @@ public class parking_fragment extends Fragment implements View.OnClickListener {
     }
 
 
-/*    @Override
+  /*  @Override
     public void onAttach(Context context) {
         super.onAttach(context);
         if (context instanceof OnFragmentInteractionListener) {
-            mListener = (OnFragmentInteractionListener) context;
+           // mListener = (OnFragmentInteractionListener) context;
+
         } else {
             throw new RuntimeException(context.toString()
                     + " must implement OnFragmentInteractionListener");
@@ -263,7 +292,8 @@ public class parking_fragment extends Fragment implements View.OnClickListener {
     @Override
     public void onDetach() {
         super.onDetach();
-        mListener = null;
+        //mListener = null;
+
     }
 
 

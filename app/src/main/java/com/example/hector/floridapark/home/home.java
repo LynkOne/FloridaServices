@@ -13,6 +13,7 @@ import com.example.hector.floridapark.floridaoberta.floridaoberta_fragment;
 import com.example.hector.floridapark.floridaoberta.reserva_aulas_fragment;
 import com.example.hector.floridapark.menu.menu_fragment;
 import com.example.hector.floridapark.model.Personas;
+import com.example.hector.floridapark.pabellon.pabellon_fragment;
 import com.example.hector.floridapark.parking.parking_fragment;
 import com.example.hector.floridapark.peceras.peceras_fragment;
 
@@ -20,10 +21,11 @@ public class home extends AppCompatActivity implements menu_fragment.OnMenuInter
 
     private FragmentManager fm=getSupportFragmentManager();
     private FragmentTransaction transaction=fm.beginTransaction();
-    private Fragment home_fragment=new home_fragment();
-    private Fragment biblioteca_fragment=new biblioteca_fragment();
-    private Fragment parking_fragent=new parking_fragment();
-    private Fragment peceras_fragment=new peceras_fragment();
+    private Fragment home_fragment;
+    private Fragment biblioteca_fragment;
+    private Fragment parking_fragent;
+    private Fragment peceras_fragment;
+    private Fragment pabellon_fragment;
     private Fragment fragment_menu;
     private Fragment fragment_reserva_aulas;
     private Fragment floridaoberta_fragment;
@@ -35,13 +37,21 @@ public class home extends AppCompatActivity implements menu_fragment.OnMenuInter
         //this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        //Inicializamos todos los fragments
+        home_fragment=new home_fragment();
+        parking_fragent=new parking_fragment();
+        biblioteca_fragment=new biblioteca_fragment();
         floridaoberta_fragment=new floridaoberta_fragment();
+        pabellon_fragment=new pabellon_fragment();
+        peceras_fragment=new peceras_fragment();
+        //Obtenemos el usuario logueado
         Bundle b = getIntent().getExtras();
         user=b.getParcelable(getResources().getString(R.string.OBJETO_PERSONA));
         getSupportActionBar().setHomeButtonEnabled(true);
         fragment_menu = menu_fragment.newInstance(user);
         fragment_reserva_aulas=new reserva_aulas_fragment();
-
+        //Insertamos el fragment home y menu
         transaction.replace(R.id.fragment_app, home_fragment);
         transaction.replace(R.id.fragment_menu,fragment_menu);
         transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
@@ -100,8 +110,15 @@ public class home extends AppCompatActivity implements menu_fragment.OnMenuInter
                 setTitle(R.string.peceras);
             }
             break;
-        case 5: //boton pavellon
-
+        case 5: //boton pabellon
+            if(!pabellon_fragment.isVisible()) {
+                transaction=fm.beginTransaction();
+                transaction.replace(R.id.fragment_app, pabellon_fragment);
+                //transaction.addToBackStack(null);
+                transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+                transaction.commit();
+                setTitle(R.string.pabellon);
+            }
             break;
         case 6:  //boton alumno/profesor
             if(user.isTipo()){

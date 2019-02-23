@@ -71,4 +71,13 @@ public class Plazas implements Parcelable {
             return new Plazas[size];
         }
     };
+
+    @Override
+    public String toString() {
+        return "Plazas{" +
+                "ID=" + ID +
+                ", plaza='" + plaza + '\'' +
+                ", ocupado=" + ocupado +
+                '}';
+    }
 }

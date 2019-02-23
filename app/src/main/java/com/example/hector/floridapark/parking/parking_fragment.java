@@ -2,6 +2,7 @@ package com.example.hector.floridapark.parking;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
@@ -11,11 +12,28 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.Toast;
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
 import com.example.hector.floridapark.MainActivity;
 import com.example.hector.floridapark.R;
+import com.example.hector.floridapark.home.home;
+import com.example.hector.floridapark.model.Personas;
+import com.example.hector.floridapark.model.Plazas;
+import com.google.gson.Gson;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.Timer;
+import java.util.TimerTask;
 
 
 public class parking_fragment extends Fragment implements View.OnClickListener {
@@ -24,11 +42,15 @@ public class parking_fragment extends Fragment implements View.OnClickListener {
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
     private ArrayList<ImageView> plazas;
+    private Plazas auxPlaza;
+    private ArrayList<Plazas> alPlazas;
     private String letra_aux_plazas="A";
     protected final static String PREFS = "preferencias";
     private SharedPreferences.Editor editor;
     private SharedPreferences preferencias;
     private View viewAuxiliar;
+    private RequestQueue queue;
+    private Timer myTimer;
 
     ImageView prova;
     // TODO: Rename and change types of parameters
@@ -77,7 +99,9 @@ public class parking_fragment extends Fragment implements View.OnClickListener {
         viewAuxiliar = v;
         preferencias = v.getContext().getSharedPreferences(parking_fragment.PREFS, Activity.MODE_PRIVATE);
         editor = preferencias.edit();
+        queue= Volley.newRequestQueue(getContext());
         plazas=new ArrayList<ImageView>();
+        alPlazas=new ArrayList<Plazas>();
         letra_aux_plazas="A";
         for(int i=1;i<=39;i++){
             Log.d("hectorr","asignando plaza por tag "+letra_aux_plazas+i);
@@ -123,21 +147,33 @@ public class parking_fragment extends Fragment implements View.OnClickListener {
 
         //Vaciamos todas las plazas y generamos el OnClickListener de cada una de ellas
         for (ImageView iv:plazas) {
-            Log.d("hectorr","rellenando plaza "+iv.getTag().toString());
-            iv.setImageResource(0);
+            Log.d("hectorr","vaciando plaza "+iv.getTag().toString()+" y creando listener");
+
             iv.setOnClickListener(this);
         }
-
-
+        //Rellenamos las plazas
+        rellenarPlazas();
         //Comprobamos si hay preferencias guardadas y pintamos la plaza donde hemos aparcado en caso de haber preferencias
         if(preferencias.getString("plaza_aparcado","").compareTo("")!=0){
 
             ImageView aux=v.findViewWithTag(preferencias.getString("plaza_aparcado",""));
             aux.setImageResource(R.drawable.carmine);
         }
+
         return v;
     }
 
+
+
+    private Runnable Timer_Tick = new Runnable() {
+        public void run() {
+
+            //This method runs in the same thread as the UI.
+
+            //Do something to the UI thread here
+
+        }
+    };
     @Override
     public void onClick(View v) {
         for (ImageView iv:plazas) {
@@ -169,9 +205,47 @@ public class parking_fragment extends Fragment implements View.OnClickListener {
         }
     }
 
-    public void relenarPlazas(){
+    public void rellenarPlazas(){
+        String url=getResources().getText(R.string.HOST)+"/api/parking/getplazas/todas/";
+        Log.d("hectorr", "estoy accediendo a la api: "+url);
+        JsonObjectRequest request=new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+                try {
+                    JSONArray plazasArray=response.getJSONArray("plazas");
+                    Log.d("hectorr",plazasArray.toString());
+                    for(int i=0;i<plazasArray.length();i++){
+                        JSONObject plaza=plazasArray.getJSONObject(i);
+                        Log.d("hectorr",plaza.getString("plaza"));
+                        auxPlaza = new Gson().fromJson(plazasArray.getJSONObject(i).toString(), Plazas.class);
+                        alPlazas.add(auxPlaza);
+                    }
+                    for (Plazas p:alPlazas) {
+                        String strplazaaux="plaza"+p.getPlaza();
+                        ImageView auximplaza=getView().findViewWithTag(strplazaaux);
+                        if(p.isOcupado()){
+                            auximplaza.setImageResource(R.drawable.car);
+                        }
+                        else{
+                            auximplaza.setImageResource(0);
+                        }
+                    }
 
 
+
+                }catch (JSONException e){
+                    e.printStackTrace();
+                    Log.d("hectorr", "Error del parse json "+e.getMessage());
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.d("hectorr","error respuesta getPlazas API");
+            }
+        });
+
+        queue.add(request);
     }
 
 
@@ -197,4 +271,5 @@ public class parking_fragment extends Fragment implements View.OnClickListener {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
     }*/
+
 }

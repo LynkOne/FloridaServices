@@ -1,7 +1,5 @@
-package com.example.hector.floridapark.pavellon;
+package com.example.hector.floridapark.pabellon;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -10,7 +8,7 @@ import android.view.ViewGroup;
 
 import com.example.hector.floridapark.R;
 
-public class pavellon_fragment extends Fragment {
+public class pabellon_fragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -22,7 +20,7 @@ public class pavellon_fragment extends Fragment {
 
     //private OnFragmentInteractionListener mListener;
 
-    public pavellon_fragment() {
+    public pabellon_fragment() {
         // Required empty public constructor
     }
 
@@ -32,11 +30,11 @@ public class pavellon_fragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment pavellon_fragment.
+     * @return A new instance of fragment pabellon_fragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static pavellon_fragment newInstance(String param1, String param2) {
-        pavellon_fragment fragment = new pavellon_fragment();
+    public static pabellon_fragment newInstance(String param1, String param2) {
+        pabellon_fragment fragment = new pabellon_fragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);

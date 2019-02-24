@@ -12,15 +12,31 @@ public class Peceras implements Parcelable {
     private Time tiempo_reservado;
     private Date hora_de_reserva;
     private String dni_usuario_reserva;
+    private Time fin_de_reserva;
 
     public Peceras() {
     }
 
+    public Peceras(int id, Time tiempo_reservado, Date hora_de_reserva, String dni_usuario_reserva, Time fin_de_reserva) {
+        this.id = id;
+        this.tiempo_reservado = tiempo_reservado;
+        this.hora_de_reserva = hora_de_reserva;
+        this.dni_usuario_reserva = dni_usuario_reserva;
+        this.fin_de_reserva=fin_de_reserva;
+    }
     public Peceras(int id, Time tiempo_reservado, Date hora_de_reserva, String dni_usuario_reserva) {
         this.id = id;
         this.tiempo_reservado = tiempo_reservado;
         this.hora_de_reserva = hora_de_reserva;
         this.dni_usuario_reserva = dni_usuario_reserva;
+    }
+
+    public Time getFin_de_reserva() {
+        return fin_de_reserva;
+    }
+
+    public void setFin_de_reserva(Time fin_de_reserva) {
+        this.fin_de_reserva = fin_de_reserva;
     }
 
     public int getId() {
@@ -60,6 +76,7 @@ public class Peceras implements Parcelable {
         tiempo_reservado = (Time) in.readValue(Time.class.getClassLoader());
         hora_de_reserva = (Date) in.readValue(Date.class.getClassLoader());
         dni_usuario_reserva = in.readString();
+        fin_de_reserva = (Time) in.readValue(Time.class.getClassLoader());
     }
 
     @Override
@@ -73,6 +90,8 @@ public class Peceras implements Parcelable {
         dest.writeValue(tiempo_reservado);
         dest.writeValue(hora_de_reserva);
         dest.writeString(dni_usuario_reserva);
+        dest.writeValue(fin_de_reserva);
+
     }
 
     @SuppressWarnings("unused")

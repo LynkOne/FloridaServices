@@ -60,5 +60,9 @@
     <string name="sala_n1">SALA\n1</string>
     <string name="sala_n2">SALA\n2</string>
     <string name="sala_n15">SALA\n15</string>
+    <string name="titulo_dialog_pecera_ocupada">Esta pecera está ocupada</string>
+    <string name="contenido_dialog_pecera_ocupada_usuario">Pecera actualmente ocupada por: \n\n</string>
+    <string name="contenido_dialog_pecera_ocupada_tiempofin">\n\nEstará libre aproximadamente a las: \n\n</string>
+    <string name="boton_ok_dialog_pecera_ocupada">OK</string>
 
 </resources>

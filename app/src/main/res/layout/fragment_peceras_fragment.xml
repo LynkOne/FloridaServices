@@ -3,12 +3,366 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".peceras.peceras_fragment">
+    tools:context=".peceras.peceras_fragment"
+    android:background="@drawable/bacground_librospizarra">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:background="@drawable/layout_bg_rounded"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/pecera9"
+                android:tag="pecera9"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="SALA\n9"
+                android:gravity="center"
+                android:background="#ef9a3f"
+                android:layout_margin="1dp"/>
+
+            <TextView
+                android:id="@+id/pecera10"
+                android:tag="pecera10"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="SALA\n10"
+                android:gravity="center"
+                android:background="#ef9a3f"
+                android:layout_margin="1dp"
+                />
+
+            <TextView
+                android:id="@+id/pecera14"
+                android:tag="pecera14"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="SALA\n14"
+                android:gravity="center"
+                android:background="#ef9a3f"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"/>
+
+            <TextView
+                android:id="@+id/pecera11"
+                android:tag="pecera11"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="SALA\n11"
+                android:gravity="center"
+                android:background="#ef9a3f"
+                android:layout_margin="1dp"/>
+
+            <TextView
+                android:id="@+id/pecera12"
+                android:tag="pecera12"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="SALA\n12"
+                android:gravity="center"
+                android:background="#ef9a3f"
+                android:layout_margin="1dp"/>
+
+            <TextView
+                android:id="@+id/pecera13"
+                android:tag="pecera13"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="SALA\n13"
+                android:gravity="center"
+                android:background="#ef9a3f"
+                android:layout_margin="1dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/pecera7"
+                android:tag="pecera7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="SALA\n7"
+                android:gravity="center"
+                android:background="#ef9a3f"
+                android:layout_margin="1dp"/>
+
+            <TextView
+                android:id="@+id/pecera8"
+                android:tag="pecera8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="SALA\n8"
+                android:gravity="center"
+                android:background="#ef9a3f"
+                android:layout_margin="1dp"/>
+
+            <TextView
+                android:id="@+id/pasillo_pecera1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="#ef9a3f"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="#fac086"
+                android:src="@drawable/table"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="#fac086"
+                android:src="@drawable/table"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="#fac086"
+                android:src="@drawable/table"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+
+            <TextView
+                android:id="@+id/pecera5"
+                android:tag="pecera5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="SALA\n5"
+                android:gravity="center"
+                android:background="#ef9a3f"
+                android:layout_margin="1dp"/>
+
+            <TextView
+                android:id="@+id/pecera6"
+                android:tag="pecera5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="SALA\n6"
+                android:gravity="center"
+                android:background="#ef9a3f"
+                android:layout_margin="1dp"/>
+
+            <ImageView
+                android:id="@+id/pasillo_pecera2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="#ef9a3f"
+                android:src="@drawable/stairsup"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="#fac086"
+                android:src="@drawable/table"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="#fac086"
+                android:src="@drawable/table"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="#fac086"
+                android:src="@drawable/table"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/pecera3"
+                android:tag="pecera3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="SALA\n3"
+                android:gravity="center"
+                android:background="#ef9a3f"
+                android:layout_margin="1dp"/>
+
+            <TextView
+                android:id="@+id/pecera4"
+                android:tag="pecera4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="SALA\n4"
+                android:gravity="center"
+                android:background="#ef9a3f"
+                android:layout_margin="1dp"/>
+
+            <TextView
+                android:id="@+id/pasillo_pecera3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="#ef9a3f"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="#fac086"
+                android:src="@drawable/table"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="#fac086"
+                android:src="@drawable/table"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="#fac086"
+                android:src="@drawable/table"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/pecera1"
+                android:tag="pecera1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="SALA\n1"
+                android:gravity="center"
+                android:background="#ef9a3f"
+                android:layout_margin="1dp"/>
+
+            <TextView
+                android:id="@+id/pecera2"
+                android:tag="pecera2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="SALA\n2"
+                android:gravity="center"
+                android:background="#ef9a3f"
+                android:layout_margin="1dp"/>
+
+            <TextView
+                android:id="@+id/pecera15"
+                android:tag="pecera15"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="#ef9a3f"
+                android:layout_marginLeft="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:text="SALA\n15"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="#fac086"
+                android:src="@drawable/table"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="#fac086"
+                android:src="@drawable/table"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="#fac086"
+                android:src="@drawable/table"/>
+
+        </LinearLayout>
+    </LinearLayout>
 
 </FrameLayout>

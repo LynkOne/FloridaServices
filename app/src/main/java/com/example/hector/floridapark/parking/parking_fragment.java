@@ -171,7 +171,7 @@ public class parking_fragment extends Fragment implements View.OnClickListener {
                     else {
                         //Whatever
                         Log.d("hectorr","El fragment parking no es visible");
-                        Thread.sleep(15000);// Sleep 15 seconds
+                        Thread.sleep(500);// Sleep 0.5 seconds
                     }
 
                 }

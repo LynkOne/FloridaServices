@@ -45,5 +45,20 @@
     <string name="error_login">Usuario o contraseña incorrectos</string>
     <string name="registro_ok">Usuario registrado correctamente</string>
     <string name="bienvenido">Bienvenido</string>
+    <string name="sala_n9">SALA\n9</string>
+    <string name="sala_n10">SALA\n10</string>
+    <string name="sala_n5">SALA\n5</string>
+    <string name="sala_n14">SALA\n14</string>
+    <string name="sala_n11">SALA\n11</string>
+    <string name="sala_n12">SALA\n12</string>
+    <string name="sala_n13">SALA\n13</string>
+    <string name="sala_n7">SALA\n7</string>
+    <string name="sala_n8">SALA\n8</string>
+    <string name="sala_n3">SALA\n3</string>
+    <string name="sala_n6">SALA\n6</string>
+    <string name="sala_n4">SALA\n4</string>
+    <string name="sala_n1">SALA\n1</string>
+    <string name="sala_n2">SALA\n2</string>
+    <string name="sala_n15">SALA\n15</string>
 
 </resources>

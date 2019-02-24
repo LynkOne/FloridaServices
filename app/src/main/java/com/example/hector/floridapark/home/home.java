@@ -24,7 +24,7 @@ public class home extends AppCompatActivity implements menu_fragment.OnMenuInter
     private Fragment home_fragment;
     private Fragment biblioteca_fragment;
     private Fragment parking_fragent;
-    private Fragment peceras_fragment;
+    private Fragment fragment_peceras;
     private Fragment pabellon_fragment;
     private Fragment fragment_menu;
     private Fragment fragment_reserva_aulas;
@@ -44,12 +44,13 @@ public class home extends AppCompatActivity implements menu_fragment.OnMenuInter
         biblioteca_fragment=new biblioteca_fragment();
         floridaoberta_fragment=new floridaoberta_fragment();
         pabellon_fragment=new pabellon_fragment();
-        peceras_fragment=new peceras_fragment();
+
         //Obtenemos el usuario logueado
         Bundle b = getIntent().getExtras();
         user=b.getParcelable(getResources().getString(R.string.OBJETO_PERSONA));
         getSupportActionBar().setHomeButtonEnabled(true);
         fragment_menu = menu_fragment.newInstance(user);
+        fragment_peceras=peceras_fragment.newInstance(user);
         fragment_reserva_aulas=new reserva_aulas_fragment();
         //Insertamos el fragment home y menu
         transaction.replace(R.id.fragment_app, home_fragment);
@@ -101,9 +102,9 @@ public class home extends AppCompatActivity implements menu_fragment.OnMenuInter
             }
             break;
         case 4://boton peceras
-            if(!peceras_fragment.isVisible()) {
+            if(!fragment_peceras.isVisible()) {
                 transaction=fm.beginTransaction();
-                transaction.replace(R.id.fragment_app, peceras_fragment);
+                transaction.replace(R.id.fragment_app, fragment_peceras);
                 //transaction.addToBackStack(null);
                 transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
                 transaction.commit();

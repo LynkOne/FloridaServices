@@ -188,15 +188,7 @@ public class parking_fragment extends Fragment implements View.OnClickListener {
 
 
 
-    private Runnable Timer_Tick = new Runnable() {
-        public void run() {
 
-            //This method runs in the same thread as the UI.
-
-            //Do something to the UI thread here
-
-        }
-    };
     @Override
     public void onClick(View v) {
         for (ImageView iv:plazas) {
@@ -287,16 +279,17 @@ public class parking_fragment extends Fragment implements View.OnClickListener {
             throw new RuntimeException(context.toString()
                     + " must implement OnFragmentInteractionListener");
         }
-    }
+    }*/
 
     @Override
     public void onDetach() {
         super.onDetach();
         //mListener = null;
-
+        timer.interrupt();
+        Log.d("hectorr","Parando el hilo del parking");
     }
 
-
+/*
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);

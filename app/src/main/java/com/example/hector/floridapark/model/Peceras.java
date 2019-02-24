@@ -3,19 +3,20 @@ package com.example.hector.floridapark.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import java.util.Date;
 import java.sql.Time;
 
 public class Peceras implements Parcelable {
 
     private int id;
     private Time tiempo_reservado;
-    private Time hora_de_reserva;
+    private Date hora_de_reserva;
     private String dni_usuario_reserva;
 
     public Peceras() {
     }
 
-    public Peceras(int id, Time tiempo_reservado, Time hora_de_reserva, String dni_usuario_reserva) {
+    public Peceras(int id, Time tiempo_reservado, Date hora_de_reserva, String dni_usuario_reserva) {
         this.id = id;
         this.tiempo_reservado = tiempo_reservado;
         this.hora_de_reserva = hora_de_reserva;
@@ -38,11 +39,11 @@ public class Peceras implements Parcelable {
         this.tiempo_reservado = tiempo_reservado;
     }
 
-    public Time getHora_de_reserva() {
+    public Date getHora_de_reserva() {
         return hora_de_reserva;
     }
 
-    public void setHora_de_reserva(Time hora_de_reserva) {
+    public void setHora_de_reserva(Date hora_de_reserva) {
         this.hora_de_reserva = hora_de_reserva;
     }
 
@@ -57,7 +58,7 @@ public class Peceras implements Parcelable {
     protected Peceras(Parcel in) {
         id = in.readInt();
         tiempo_reservado = (Time) in.readValue(Time.class.getClassLoader());
-        hora_de_reserva = (Time) in.readValue(Time.class.getClassLoader());
+        hora_de_reserva = (Date) in.readValue(Date.class.getClassLoader());
         dni_usuario_reserva = in.readString();
     }
 
@@ -86,4 +87,14 @@ public class Peceras implements Parcelable {
             return new Peceras[size];
         }
     };
+
+    @Override
+    public String toString() {
+        return "Peceras{" +
+                "id=" + id +
+                ", tiempo_reservado=" + tiempo_reservado +
+                ", hora_de_reserva=" + hora_de_reserva +
+                ", dni_usuario_reserva='" + dni_usuario_reserva + '\'' +
+                '}';
+    }
 }

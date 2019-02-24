@@ -32,7 +32,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="SALA\n9"
+                android:text="@string/sala_n9"
                 android:gravity="center"
                 android:background="#ef9a3f"
                 android:layout_margin="1dp"/>
@@ -43,7 +43,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="SALA\n10"
+                android:text="@string/sala_n10"
                 android:gravity="center"
                 android:background="#ef9a3f"
                 android:layout_margin="1dp"
@@ -55,7 +55,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="SALA\n14"
+                android:text="@string/sala_n14"
                 android:gravity="center"
                 android:background="#ef9a3f"
                 android:layout_marginLeft="1dp"
@@ -68,7 +68,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="SALA\n11"
+                android:text="@string/sala_n11"
                 android:gravity="center"
                 android:background="#ef9a3f"
                 android:layout_margin="1dp"/>
@@ -79,7 +79,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="SALA\n12"
+                android:text="@string/sala_n12"
                 android:gravity="center"
                 android:background="#ef9a3f"
                 android:layout_margin="1dp"/>
@@ -90,7 +90,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="SALA\n13"
+                android:text="@string/sala_n13"
                 android:gravity="center"
                 android:background="#ef9a3f"
                 android:layout_margin="1dp"/>
@@ -109,7 +109,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="SALA\n7"
+                android:text="@string/sala_n7"
                 android:gravity="center"
                 android:background="#ef9a3f"
                 android:layout_margin="1dp"/>
@@ -120,7 +120,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="SALA\n8"
+                android:text="@string/sala_n8"
                 android:gravity="center"
                 android:background="#ef9a3f"
                 android:layout_margin="1dp"/>
@@ -175,18 +175,18 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="SALA\n5"
+                android:text="@string/sala_n5"
                 android:gravity="center"
                 android:background="#ef9a3f"
                 android:layout_margin="1dp"/>
 
             <TextView
                 android:id="@+id/pecera6"
-                android:tag="pecera5"
+                android:tag="pecera6"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="SALA\n6"
+                android:text="@string/sala_n6"
                 android:gravity="center"
                 android:background="#ef9a3f"
                 android:layout_margin="1dp"/>
@@ -242,7 +242,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="SALA\n3"
+                android:text="@string/sala_n3"
                 android:gravity="center"
                 android:background="#ef9a3f"
                 android:layout_margin="1dp"/>
@@ -253,7 +253,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="SALA\n4"
+                android:text="@string/sala_n4"
                 android:gravity="center"
                 android:background="#ef9a3f"
                 android:layout_margin="1dp"/>
@@ -308,7 +308,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="SALA\n1"
+                android:text="@string/sala_n1"
                 android:gravity="center"
                 android:background="#ef9a3f"
                 android:layout_margin="1dp"/>
@@ -319,7 +319,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="SALA\n2"
+                android:text="@string/sala_n2"
                 android:gravity="center"
                 android:background="#ef9a3f"
                 android:layout_margin="1dp"/>
@@ -335,7 +335,7 @@
                 android:layout_marginLeft="1dp"
                 android:layout_marginBottom="1dp"
                 android:layout_marginRight="1dp"
-                android:text="SALA\n15"/>
+                android:text="@string/sala_n15"/>
 
             <ImageView
                 android:layout_width="0dp"
@@ -361,8 +361,10 @@
                 android:layout_marginRight="1dp"
                 android:background="#fac086"
                 android:src="@drawable/table"/>
+
 
         </LinearLayout>
+
     </LinearLayout>
 
 </FrameLayout>

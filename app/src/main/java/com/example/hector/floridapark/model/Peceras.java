@@ -13,6 +13,7 @@ public class Peceras implements Parcelable {
     private Date hora_de_reserva;
     private String dni_usuario_reserva;
     private Time fin_de_reserva;
+    private boolean ocupada;
 
     public Peceras() {
     }
@@ -29,6 +30,14 @@ public class Peceras implements Parcelable {
         this.tiempo_reservado = tiempo_reservado;
         this.hora_de_reserva = hora_de_reserva;
         this.dni_usuario_reserva = dni_usuario_reserva;
+    }
+
+    public boolean isOcupada() {
+        return ocupada;
+    }
+
+    public void setOcupada(boolean ocupada) {
+        this.ocupada = ocupada;
     }
 
     public Time getFin_de_reserva() {

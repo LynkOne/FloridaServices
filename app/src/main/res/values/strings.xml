@@ -67,5 +67,9 @@
     <string name="titulo_dialog_abandonar_pecera">¿Desea abandonar la pecera?</string>
     <string name="boton_dialog_pecera_abandonar">Abandonar</string>
     <string name="boton_dialog_pecera_cancelar">Cancelar</string>
+    <string name="titulo_dialog_reservar_pecera">¿Desea reservar esta pecera?\n</string>
+    <string name="boton_dialog_pecera_reservar">Reservar</string>
+    <string name="mensaje_reserva_pecera">Seleccione el tiempo de la reserva:\n</string>
+    <string name="error_ya_tienes_pecera">Ya tienes una pecera ocupada</string>
 
 </resources>

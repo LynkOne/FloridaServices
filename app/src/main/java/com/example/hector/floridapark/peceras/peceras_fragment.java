@@ -1,5 +1,6 @@
 package com.example.hector.floridapark.peceras;
 
+import android.app.TimePickerDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.Color;
@@ -14,7 +15,11 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.LinearLayout;
+import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -88,7 +93,7 @@ public class peceras_fragment extends Fragment implements View.OnClickListener{
         alPecerasJsonOcupadas=new ArrayList<Peceras>();
         for(int i=1;i<=15;i++){
             salas.add((TextView) v.findViewWithTag("pecera"+i));
-            Log.d("hectorr","Findview Pecera: pecera"+i);
+            //Log.d("hectorr","Findview Pecera: pecera"+i);
             salas.get(i-1).setOnClickListener(this);
         }
 
@@ -178,7 +183,88 @@ public class peceras_fragment extends Fragment implements View.OnClickListener{
                         }
                     }
                     else{
-                       //La pecera esta disponible
+                       //La pecera esta disponible para reserva
+                        //TimePickerDialog.Builder alertBuilder = new TimePickerDialog();
+
+
+                        String[] posibleTimes = { "30min", "1h", "2h 30min", "3h", "3h 30min", "4h"};
+                        final ArrayAdapter<String> adp = new ArrayAdapter<String>(getContext(), android.R.layout.simple_spinner_item, posibleTimes);
+                        final Spinner sp = new Spinner(getContext());
+                        sp.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT,LinearLayout.LayoutParams.WRAP_CONTENT));
+                        sp.setAdapter(adp);
+                        AlertDialog.Builder alertBuilder = new AlertDialog.Builder(getContext());
+                        alertBuilder.setTitle(getResources().getText(R.string.titulo_dialog_reservar_pecera));
+                        alertBuilder.setMessage(getResources().getText(R.string.mensaje_reserva_pecera));
+                        // Botón ok
+                        alertBuilder.setPositiveButton(getResources().getText(R.string.boton_dialog_pecera_reservar), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                //Reservar pecera
+                                Log.d("hectorr",sp.getSelectedItem().toString());
+                                String tiempo="";
+                                switch (sp.getSelectedItem().toString()){
+                                    case "30min":
+                                        tiempo="00:30:00";
+                                        break;
+                                    case"1h":
+                                        tiempo="01:00:00";
+                                        break;
+                                    case "1h 30min":
+                                        tiempo="01:30:00";
+                                        break;
+                                    case "2h":
+                                        tiempo="02:00:00";
+                                        break;
+                                    case "2h 30min":
+                                        tiempo="02:30:00";
+                                        break;
+                                    case "3h":
+                                        tiempo="03:00:00";
+                                        break;
+                                    case "3h 30min":
+                                        tiempo="03:30:00";
+                                        break;
+                                    case "4h":
+                                        tiempo="04:00:00";
+                                        break;
+                                    default:
+                                        break;
+                                }
+                                boolean tengoReserva=false;
+                                for (Peceras pcr:alPecerasJson) {
+                                    if(pcr.getDni_usuario_reserva().compareTo(usuario.getDni())==0){
+                                        tengoReserva=true;
+                                        Log.d("hectorr","peceras tostring"+pcr.toString());
+
+                                    }
+                                }
+                                if(tengoReserva){
+                                    Log.d("hectorr","Ya tienes una pecera");
+                                    Toast.makeText(getContext(), getResources().getText(R.string.error_ya_tienes_pecera), Toast.LENGTH_SHORT).show();
+                                }
+                                else{
+                                    Log.d("hectorr","Reservando pecera");
+                                    reservarPecera(auxObjPecera, usuario, tiempo);
+                                }
+
+                                //cerrar dialog
+                                dialog.dismiss();
+
+                            }
+                        });
+                        alertBuilder.setNegativeButton(getResources().getText(R.string.boton_dialog_pecera_cancelar), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                //cerrar dialog
+                                dialog.dismiss();
+
+                            }
+                        });
+
+
+                        alertBuilder.setView(sp);
+                        alertBuilder.create().show();
+
                     }
 
 
@@ -216,7 +302,7 @@ public class peceras_fragment extends Fragment implements View.OnClickListener{
 
                     for (Peceras pcr:alPecerasJson) {
                         salas.get(pcr.getId()-1).setBackgroundColor(Color.parseColor("#ef9a3f"));
-                        Log.d("hectorr", "Cambiando background de la sala libre "+pcr.getId());
+                        //Log.d("hectorr", "Cambiando background de la sala libre "+pcr.getId());
                     }
 
                     ///Pintar ocupadas
@@ -256,7 +342,7 @@ public class peceras_fragment extends Fragment implements View.OnClickListener{
                                         }
                                     }
 
-                                    Log.d("hectorr", "Cambiando background de la sala ocupada "+pcr.getId());
+                                    //Log.d("hectorr", "Cambiando background de la sala ocupada "+pcr.getId());
                                 }
 
 
@@ -289,7 +375,23 @@ public class peceras_fragment extends Fragment implements View.OnClickListener{
 
 
     }
-    public void reservarPecera(Peceras pcr, Personas per){
+    public void reservarPecera(Peceras pcr, Personas per, String tiempo_reserva){
+        String url=getResources().getText(R.string.HOST)+"/api/peceras/reservarpecera/"+pcr.getId()+"/"+tiempo_reserva+"/"+per.getDni()+"/";
+        Log.d("hectorr", "estoy accediendo a la api: "+url);
+        JsonObjectRequest request=new JsonObjectRequest(Request.Method.POST, url, null, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+                actualizarPeceras();
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+
+            }
+        });
+
+        queue.add(request);
+
     }
     public void anularReserva(Peceras pcr, Personas per){
         String url=getResources().getText(R.string.HOST)+"/api/peceras/abandonarpecera/"+pcr.getId()+"/"+per.getDni()+"/";

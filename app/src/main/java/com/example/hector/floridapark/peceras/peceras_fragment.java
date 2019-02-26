@@ -35,6 +35,8 @@ import com.google.gson.Gson;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.time.Instant;
+import java.util.Calendar;
 import java.util.Date;
 import java.sql.Time;
 import java.text.DateFormat;
@@ -231,7 +233,18 @@ public class peceras_fragment extends Fragment implements View.OnClickListener{
                                         break;
                                 }
                                 boolean tengoReserva=false;
+
+
+                                //Date currentTime = Calendar.getInstance().getTime();
+                                //Log.d("hectorr", "time: "+currentTime+" ");
                                 for (Peceras pcr:alPecerasJson) {
+                                    //Calendar cal=Calendar.getInstance();
+                                    //cal.setTime(pcr.getHora_de_reserva());
+                                    //cal.add(Calendar.MINUTE, pcr.getTiempo_reservado().)
+                                    //long auxl=pcr.getHora_de_reserva().getTime()+pcr.getFin_de_reserva().getTime();
+                                    //cal.setTimeInMillis(auxl);
+                                    //Date auxd= java.sql.Date.valueOf(String.valueOf((Integer.parseInt(pcr.getHora_de_reserva().toString())+Integer.parseInt(pcr.getTiempo_reservado().toString()))));
+                                    //Log.d("hectorr","msg "+cal);
                                     if(pcr.getDni_usuario_reserva().compareTo(usuario.getDni())==0){
                                         tengoReserva=true;
                                         Log.d("hectorr","peceras tostring"+pcr.toString());

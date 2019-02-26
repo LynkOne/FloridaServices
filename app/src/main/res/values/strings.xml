@@ -71,5 +71,10 @@
     <string name="boton_dialog_pecera_reservar">Reservar</string>
     <string name="mensaje_reserva_pecera">Seleccione el tiempo de la reserva:\n</string>
     <string name="error_ya_tienes_pecera">Ya tienes una pecera ocupada</string>
+    <string name="resumen_de_servicios">Resumen de servicios</string>
+    <string name="plazas_de_aparcamiento_disponibles">Plazas de aparcamiento disponibles:</string>
+
+    <string name="peceras_disponibles">Peceras disponibles:</string>
+
 
 </resources>

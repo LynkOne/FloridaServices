@@ -4,11 +4,22 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
+import com.android.volley.RequestQueue;
+import com.android.volley.VolleyError;
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
 import com.example.hector.floridapark.R;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 
 public class home_fragment extends Fragment {
@@ -16,6 +27,10 @@ public class home_fragment extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+    private int pecerasLibres;
+    private int plazasLibres;
+    private RequestQueue queue;
+    private TextView tvResumenPlazas, tvResumenPeceras;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -59,12 +74,58 @@ public class home_fragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v=inflater.inflate(R.layout.fragment_home_fragment, container, false);
-
-
-
+        queue= Volley.newRequestQueue(getContext());
+        tvResumenPeceras=(TextView)v.findViewById(R.id.home_resumen_peceras);
+        tvResumenPlazas=(TextView)v.findViewById(R.id.home_resumen_plazas);
+        getStats();
         return v;
     }
+    public void getStats(){
+        String url=getResources().getText(R.string.HOST)+"/api/peceras/getpeceras/libres/";
+        Log.d("hectorr", "estoy accediendo a la api: "+url);
 
+        JsonObjectRequest request=new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+                try{
+                    JSONArray pecerasArray=response.getJSONArray("peceras");
+                    pecerasLibres=pecerasArray.length()+1;
+                    tvResumenPeceras.setText(pecerasLibres+"/15");
+                    //Log.d("hectorr",pecerasLibres+" peceras libres");
+                }catch (Exception e){
+                    Log.d("hectorr", "Error del parse json "+e.getMessage());
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.d("hectorr","error respuesta getPeceras libres API");
+            }
+        });
+        queue.add(request);
+        String url2=getResources().getText(R.string.HOST)+"/api/parking/getplazas/libres/";
+        Log.d("hectorr", "estoy accediendo a la api: "+url2);
+
+        JsonObjectRequest request2=new JsonObjectRequest(Request.Method.GET, url2, null, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+                try{
+                    JSONArray plazasArray=response.getJSONArray("plazas");
+                    plazasLibres=plazasArray.length()+1;
+                    tvResumenPlazas.setText(plazasLibres+"/253");
+                    //Log.d("hectorr",plazasLibres+" plazas libres");
+                }catch (Exception e){
+                    Log.d("hectorr", "Error del parse json "+e.getMessage());
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.d("hectorr","error respuesta getPeceras libres API");
+            }
+        });
+        queue.add(request2);
+    }
 
 /*
     @Override
